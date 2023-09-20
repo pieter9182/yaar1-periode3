@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VRPlayground</title>
+    <script src="https://aframe.io/releases/1.4.0/aframe.min.js"></script>
+    <script src="main.js" defer></script>
+    <script src="af-frame.js" defer></script>
+</head>
+<body>
+    <a-scene>
+        
+            <a-sky color="grey"></a-sky>
+            <a-camera>
+                <a-cursor id="js--cursor" color="black"></a-cursor>
+            </a-camera>
+            <a-box class="js--box" position="0 0 -4" color="black"></a-box>
+            <a-box class="js--box" position="1 0 -4" color="black"></a-box>
+            <a-box class="js--box" position="2 0 -4" color="black"></a-box>
+            <a-box class="js--box" position="1 1 -4" color="black"></a-box>
+            <a-box class="js--box" position="0 1 -4" color="black"></a-box>
+            <a-box class="js--box" position="2 1 -4" color="black"></a-box>
+            <a-box class="js--box" position="2 2 -4" color="black"></a-box>
+            <a-box class="js--box" position="0 2 -4" color="black"></a-box>
+            <a-box class="js--box" position="1 2 -4" color="black"></a-box>
+
+            <a-sphere class="js--sphere" position=" -10 0 0" color="red"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 2 0" color="green"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 4 0" color="blue"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 0 -2" color="yellow"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 -2 -2" color="pink"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 4 -2" color="purple"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 0 -4" color="orange"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 2 -4" color="cyan"></a-sphere>
+            <a-sphere class="js--sphere" position="-10 4 -4" color="limegreen"></a-sphere>
+    </a-scene>
+</body> 
+</html>

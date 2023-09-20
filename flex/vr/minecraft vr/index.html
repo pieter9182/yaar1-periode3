@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="js/aframe.min.js"></script>
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>minebox</title>
+</head>
+<body>
+    <h2>wood: <span id="js--wood">0</span> </h2>
+    <h2>stone: <span id="js--stone">0</span> </h2>
+    <a-scene>
+        <a-camera>
+            <a-cursor color="black">
+                <a-box id="js--item--grabbed" width="0.5" height="0.5" depth="0.5" color="blue" position=" 0.5 0 0"></a-box>
+                <a-cone id="js--pickaxe--invisible"  height="3" color="cyan" position="1.5 0 -1" rotation="-50 0 0"></a-cone>
+            </a-cursor>
+        </a-camera>
+        <a-box id="js--item" width="1" height="1" depth="1" color="blue" position=" 0 0 -3"></a-box>
+        <a-sphere class="js--sphere" color="yellow" position="-2 -0.5 5"></a-sphere>
+        <a-sphere class="js--sphere" color="yellow" position="0 -0.5 5"></a-sphere>
+        <a-sphere class="js--sphere" color="yellow" position="2 -0.5 5"></a-sphere>
+        <a-plane width="20" height="20" color="#B8621B" position="0 0 0" rotation="-90 0 0"></a-plane>
+        <!-- boom -->
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="brown" position=" 4 1 0"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="brown" position=" 4 1.5 0"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="brown" position=" 4 2 0"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="brown" position=" 4 2.5 0"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="green" position=" 4 3 0"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="green" position=" 4 3 0.5"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="green" position=" 4 3 -0.5"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="green" position=" 4 3.5 -0.25"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="green" position=" 4 3.5 0.25"></a-box>
+        <a-box class="js--tree" width="0.5" height="0.5" depth="0.5" color="green" position=" 4 4 0"></a-box>
+        <!--pickaxe-->
+        <a-cone id="js--pickaxe"  height="3" color="cyan" position="-4 1 0"></a-cone>
+
+        <!-- casteel-->  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="black" position="0 0.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5sd" height="0.5" depth="0.5" color="grey" position="0.5 0.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="1 0.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="-0.5 0.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="-1 0.5 -4"></a-box>
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="-1.5 0.5 -4"></a-box>
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="1.5 0.5 -4"></a-box>
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="black" position="0 1 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5sd" height="0.5" depth="0.5" color="grey" position="0.5 1 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="1 1 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="-0.5 1 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="-1 1 -4"></a-box>
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="-1.5 1 -4"></a-box>
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="1.5 1 -4"></a-box>
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="0 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="0.5 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="-0.5 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="1 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="grey" position="-1 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="-1.5 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="1.5 1.5 -4"></a-box>  
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="-1.5 2 -4"></a-box> 
+        <a-box class="js--casteel"  width="0.5" height="0.5" depth="0.5" color="red" position="1.5 2 -4"></a-box>   
+        <!-- invisible boxes-->
+        <a-box id="js--invisible--box" visible="false" width="1" height="1" depth="1" color="blue"></a-box>
+    </a-scene>
+</body>
+</html>

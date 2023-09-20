@@ -1,0 +1,122 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 2rem;
+    background:#FFFBF5 ;
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center ;
+    min-height: 100vh;
+    flex-wrap:wrap ;
+    font-family: sans-serif;
+}
+
+.card{
+    width:40rem ;
+    height: 40rem;
+    border-radius: 5rem;
+    box-shadow: 0rem 1rem 2rem 0rem black;
+    flex-shrink: 0;
+}
+
+.card--meme{
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap: 2rem;
+}
+
+.card--meme img{
+    height: 70%;
+    width: 100%;
+}
+
+.card--meme p{
+    height: 20%;
+    font-size: 75%;
+}
+
+.card--slider{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+    padding: 4rem;
+}
+
+.card--slider > h2{
+    font-size: 400%;
+}
+
+.card--slider > input{
+    -webkit-appearance: none;
+    appearance: none;
+    width: 100%;
+    border-radius: 5rem;
+    height: 1.8rem;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc04bc8);
+    border: none;
+    cursor: pointer;
+}
+
+.card--slider > input::-webkit-slider-thumb {
+    -webkit-appearance: none; /* Override default look */
+    appearance: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc04bc8);
+    border: none;
+    cursor: pointer;
+    }
+  
+.card--slider > input ::-moz-range-thumb {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background: linear-gradient(to right, #feac5e, #c779d0, #4bc04bc8);
+  }
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column ;
+    gap: 4rem;
+}
+
+.timeText{
+    font-size: 200%;
+}
+.button{
+    padding: 1rem 2rem ;
+    font-size: 2rem ;
+    border-radius: 0.5rem;
+    color: white;
+}
+
+.button--start{
+    background: #13005A;
+    
+}
+
+.button--stop{
+    background:#1C82AD ;
+}
+
+.button--reset{
+    background:#03C988 ;
+   
+
+}
